@@ -4,19 +4,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-categorias',
-  templateUrl: 'categorias.html',
+  selector: 'page-produtos',
+  templateUrl: 'produtos.html',
 })
-export class CategoriasPage {
+export class ProdutosPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CategoriasPage');
+    console.log('ionViewDidLoad ProdutosPage');
   }
-
-  navProdutos(){
-    this.navCtrl.push('ProdutosPage');
+  navProdutoDetalhe() {
+    this.navCtrl.push("ProdutodetalhePage");
   }
 }
