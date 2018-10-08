@@ -1,0 +1,42 @@
+<ion-header>
+ <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Perfil</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <img src="https://image.freepik.com/icones-gratis/perfil-macho-utilizador-sombra_318-40244.jpg">
+
+  <h3 align="center">Nome Usuário</h3>
+
+  <ion-list inset>
+
+      <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Endereço</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>CEP</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Senha</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+    </ion-list>
+    <button ion-button block (click)="atualizar()">Enviar</button>
+</ion-content>
